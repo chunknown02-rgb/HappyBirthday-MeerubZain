@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+
+<title>Happy Birthday Meerub Zain ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Cinzel',serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#0d0d0d;
+overflow:hidden;
+}
+
+.card{
+background:rgba(20,20,20,0.95);
+border:2px solid #d4af37;
+padding:40px;
+border-radius:25px;
+text-align:center;
+width:90%;
+max-width:750px;
+color:#f5d67b;
+box-shadow:0 0 30px rgba(212,175,55,0.4);
+animation:fadeIn 2s ease;
+z-index:2;
+}
+
+h1{
+font-size:3.2rem;
+color:#ffd700;
+margin-bottom:10px;
+}
+
+h2{
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.date{
+font-size:1.2rem;
+color:#fff;
+margin-bottom:20px;
+}
+
+.message{
+font-size:1rem;
+line-height:1.9;
+color:#f5f5f5;
+}
+
+.from{
+margin-top:25px;
+font-size:1.3rem;
+color:#ffd700;
+font-weight:bold;
+}
+
+img{
+width:230px;
+height:230px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #d4af37;
+margin:20px 0;
+box-shadow:0 0 25px rgba(212,175,55,.8);
+}
+
+button{
+margin-top:25px;
+padding:12px 25px;
+background:#d4af37;
+color:black;
+font-weight:bold;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.heart{
+position:absolute;
+font-size:22px;
+animation:float 10s linear infinite;
+opacity:.8;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+100%{
+transform:translateY(-120px);
+opacity:1;
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:scale(.8);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>🎂 Happy Birthday</h1>
+<h2>Meerub Zain 🌹</h2>
+
+<img src="couple.jpg" alt="Zain & Meerub">
+
+<div class="date">
+✨ 12 June ✨
+</div>
+
+<div class="message">
+My Dearest Meerub Zain ❤️<br><br>
+
+On this beautiful day, I celebrate the most precious person in my life.
+
+Your love, kindness, and smile make every moment special.
+May Allah bless you with happiness, success, good health, and endless joy.
+
+Thank you for being my greatest blessing and my favorite part of every day.
+
+🌹 Happy Birthday, My Love 🌹
+</div>
+
+<div class="from">
+Forever Yours ❤️<br>
+Zain
+</div>
+
+<button onclick="document.getElementById('song').play()">
+🎵 Play Our Song
+</button>
+
+<audio id="song" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+<script>
+for(let i=0;i<40;i++){
+let heart=document.createElement('div');
+heart.className='heart';
+heart.innerHTML='✨';
+heart.style.left=Math.random()*100+'vw';
+heart.style.animationDuration=(5+Math.random()*8)+'s';
+heart.style.fontSize=(15+Math.random()*25)+'px';
+document.body.appendChild(heart);
+}
+</script>
+
+</body>
+  </html>
